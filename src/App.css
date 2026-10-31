@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+.landing-page {
+  position: relative;
+  min-height: 100vh;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-panel {
+  width: min(100%, 980px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 170px;
+  position: relative;
+  z-index: 2;
+}
+
+.globe-scene {
+  position: relative;
+  width: min(350px, 100%);
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.globe-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.headline {
+  margin: 0;
+  font-size: clamp(2.2rem, 3vw, 4rem);
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: -0.06em;
+  color: #1f2126;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 400;
+  font-style: italic;
+  max-width: 760px;
+}
+
+.accent {
+  color: #d64ee1;
+  font-weight: 500;
+}
+
+.intro {
+  margin: 22px 0 18px;
+  text-align: center;
+  color: #5c5f64;
+  font-size: 1.02rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+}
+
+.description {
+  max-width: 720px;
+  text-align: center;
+  color: #53575d;
+  line-height: 1.7;
+  font-size: 1.02rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.description p {
+  margin: 0 0 16px;
+}
+
+.brand,
+.highlight {
+  color: #d64ee1;
+  font-weight: 600;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 42px;
+  margin-top: 22px;
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: #22262c;
+}
+
+.tabs a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-wave {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -28px;
+  height: 165px;
+  background: #2d2d3e;
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+}
+
+@media (max-width: 700px) {
+  .hero-panel {
+    padding: 25px 18px 150px;
+  }
+
+  .globe-scene {
+    transform: scale(0.8);
+    margin-bottom: 0;
+  }
+
+  .tabs {
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+}
